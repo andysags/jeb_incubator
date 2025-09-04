@@ -1,0 +1,137 @@
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-02 22:21:32.342718) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.028240) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.036989) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.045110) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.054974) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.062938) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.071197) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.080233) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.089471) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.097088) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.105929) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.114664) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.123068) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.130647) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.139075) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.146488) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.154507) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.162388) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.171762) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.179281) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.188307) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.196613) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.206078) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.213562) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.222289) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.229762) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.238683) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.246338) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.256070) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.263500) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.272224) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.279627) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.288226) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.295698) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.304172) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.311711) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.319890) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.327756) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.335622) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.344486) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.352891) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.360479) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.368111) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.376492) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.384083) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.392502) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.400723) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.409182) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.417861) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.426793) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.434998) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.442436) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-01 13:06:00) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.349083) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.357307) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.367277) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.377597) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.387572) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.396792) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.405585) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.413588) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.422421) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.431441) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.439938) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.448151) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.456558) while time zone support is active.
+  warnings.warn(
+/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.465993) while time zone support is active.
+  warnings.warn(
+{"startups": {"ok": true, "created": 0, "updated": 32}, "users": {"ok": true, "created": 0, "updated": 52}, "investors": {"ok": true, "created": 0, "updated": 25}, "partners": {"ok": true, "created": 0, "updated": 17}, "news": {"ok": true, "created": 0, "updated": 15}, "events": {"ok": true, "created": 0, "updated": 10}}
+Synchronisation complète terminée.
+[2025-09-04T00:07:47] ==== Fin sync_all OK ==== 
