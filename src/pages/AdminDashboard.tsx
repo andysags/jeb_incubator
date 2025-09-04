@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { GetServerSideProps } from 'next';
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader } from "./ui/card";
@@ -24,6 +24,8 @@ import {
 interface NewsItem { id: number | string; title: string; status: string; date: string; views?: number }
 interface EventItem { id: number | string; title: string; status: string; date: string; attendees?: number }
 
+interface UserItem { id: number | string; name: string; email: string; role: string }
+interface StartupItem { id: number | string; name: string; sector?: string; stage?: string; location?: string; logo?: string | null; status?: string; join_date?: string }
 interface AdminDashboardProps {
   startups: number;
   investors: number;
@@ -31,11 +33,22 @@ interface AdminDashboardProps {
   users: number;
   recentNews: NewsItem[];
   upcomingEvents: EventItem[];
+  userList: UserItem[];
+  startupList?: StartupItem[];
+  startupsTotal?: number;
+  startupsPage?: number;
+  startupsLimit?: number;
 }
 
-export function AdminDashboard({ startups, investors, events, users, recentNews, upcomingEvents }: AdminDashboardProps) {
+export function AdminDashboard({ startups, investors, events, users, recentNews, upcomingEvents, userList, startupList, usersTotal: usersTotalProp = 0, usersPage: usersPageProp = 1, usersLimit: usersLimitProp = 10 }: AdminDashboardProps & { usersTotal?: number; usersPage?: number; usersLimit?: number }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("all");
+  // Pagination utilisateurs
+  const [usersPage, setUsersPage] = useState(usersPageProp)
+  const [usersLimit] = useState(usersLimitProp)
+  const [usersTotal, setUsersTotal] = useState(usersTotalProp)
+  const [usersData, setUsersData] = useState<UserItem[]>(userList || [])
+  const [usersLoading, setUsersLoading] = useState(false)
   // Stats filtrées selon les instructions client:
   // - Startups actives: nombre de startups (activité réelle gérée plus tard)
   // - Investisseurs: remplace Entrepreneurs
@@ -49,67 +62,49 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
     { icon: Calendar, label: "Événements", value: String(events) }
   ];
 
-  const startupRows = [
-    {
-      id: 1,
-      name: "EcoTech Solutions",
-      sector: "GreenTech",
-      stage: "Série A",
-      location: "Paris",
-      joinDate: "Mars 2023",
-      status: "active",
-      logo: "https://images.unsplash.com/photo-1609619385076-36a873425636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMHRlYW18ZW58MXx8fHwxNzU2NzMzODk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      id: 2,
-      name: "HealthAI",
-      sector: "HealthTech",
-      stage: "Seed",
-      location: "Lyon",
-      joinDate: "Juin 2023",
-      status: "active",
-      logo: "https://images.unsplash.com/photo-1707301280425-475534ec3cc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcmVzZW50YXRpb258ZW58MXx8fHwxNzU2NjU3NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      id: 3,
-      name: "FinFlow",
-      sector: "FinTech",
-      stage: "Pré-seed",
-      location: "Marseille",
-      joinDate: "Sept 2023",
-      status: "active",
-      logo: "https://images.unsplash.com/photo-1732284081090-8880f1e1905b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMHRlYW18ZW58MXx8fHwxNzU2NzMzODk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      id: 4,
-      name: "AgriBot",
-      sector: "AgriTech",
-      stage: "Série A",
-      location: "Toulouse",
-      joinDate: "Jan 2023",
-      status: "graduated",
-      logo: "https://images.unsplash.com/photo-1609619385076-36a873425636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbiUyMHRlYW18ZW58MXx8fHwxNzU2NzMzODk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      id: 5,
-      name: "EduVR",
-      sector: "EdTech",
-      stage: "Seed",
-      location: "Paris",
-      joinDate: "Nov 2023",
-      status: "active",
-      logo: "https://images.unsplash.com/photo-1707301280425-475534ec3cc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMG1lZXRpbmclMjBwcmVzZW50YXRpb258ZW58MXx8fHwxNzU2NjU3NzkzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+  // startupList vient du serveur via SSR
+  const startupRows = startupList || []
+  // Pagination + tri pour startups
+  const [startupsPage, setStartupsPage] = useState(1)
+  const [startupsLimit] = useState(10)
+  const [startupsTotal, setStartupsTotal] = useState(0)
+  const [startupsData, setStartupsData] = useState<StartupItem[]>(startupList || [])
+  const [startupsLoading, setStartupsLoading] = useState(false)
+  const [orderBy, setOrderBy] = useState<'join_date'|'name'|'id'|'sector'|'stage'|'location'>('join_date')
+  const [orderDir, setOrderDir] = useState<'asc'|'desc'>('desc')
+
+  async function fetchStartupsPage(page: number) {
+    setStartupsLoading(true)
+    try {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
+      const resp = await fetch(`${baseUrl}/api/admin/startups?page=${page}&limit=${startupsLimit}&order_by=${orderBy}&order_dir=${orderDir}`)
+      if (!resp.ok) throw new Error('status ' + resp.status)
+      const json = await resp.json()
+      setStartupsData(json.items || [])
+      setStartupsTotal(json.total || 0)
+      setStartupsPage(json.page || page)
+    } catch (e) {
+      console.warn('fetch startups page failed', e)
+    } finally {
+      setStartupsLoading(false)
     }
-  ];
+  }
+
+  // Reload startups when pagination or sort changes
+  useEffect(() => {
+    fetchStartupsPage(startupsPage)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [orderBy, orderDir, startupsPage])
 
   // Les tableaux recentNews & upcomingEvents viennent maintenant du serveur.
   // S'il n'y a rien, on n'affiche rien (pas de fallback factice).
 
-  const filteredStartups = startupRows.filter((startup) => {
-    const matchesSearch = startup.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         startup.sector.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesFilter = selectedFilter === "all" || startup.status === selectedFilter;
-    return matchesSearch && matchesFilter;
+  // startupRows is the SSR-initialized list; we use startupsData (paginated) for UI
+  const filteredStartups = startupsData.filter((startup) => {
+    const matchesSearch = (startup.name || '').toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         (startup.sector || '').toLowerCase().includes(searchTerm.toLowerCase());
+    // No status filtering
+    return matchesSearch
   });
 
   const getStatusColor = (status: string) => {
@@ -129,6 +124,23 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
       default: return status;
     }
   };
+
+  async function fetchUsersPage(page: number) {
+    setUsersLoading(true)
+    try {
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || ''
+      const resp = await fetch(`${baseUrl}/api/admin/users?page=${page}&limit=${usersLimit}`)
+      if (!resp.ok) throw new Error('status ' + resp.status)
+      const json = await resp.json()
+      setUsersData(json.users || [])
+      setUsersTotal(json.total || 0)
+      setUsersPage(json.page || page)
+    } catch (e) {
+      console.warn('fetch users page failed', e)
+    } finally {
+      setUsersLoading(false)
+    }
+  }
 
   return (
     <div className="min-h-screen py-8 bg-background text-foreground dark:bg-background dark:text-foreground">
@@ -157,7 +169,7 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
             <TabsTrigger value="startups">Startups</TabsTrigger>
             <TabsTrigger value="news">Actualités</TabsTrigger>
             <TabsTrigger value="events">Événements</TabsTrigger>
-            <TabsTrigger value="analytics">Analytics</TabsTrigger>
+            <TabsTrigger value="users">Utilisateurs</TabsTrigger>
           </TabsList>
 
           {/* Overview Tab */}
@@ -285,12 +297,36 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
                   <Table>
                     <TableHeader>
                       <TableRow>
-                        <TableHead>Startup</TableHead>
-                        <TableHead>Secteur</TableHead>
-                        <TableHead>Stade</TableHead>
-                        <TableHead>Localisation</TableHead>
-                        <TableHead>Date d&apos;entrée</TableHead>
-                        <TableHead>Statut</TableHead>
+                        <TableHead>
+                          <button className="flex items-center space-x-2" onClick={() => { if (orderBy === 'name') setOrderDir(orderDir === 'asc' ? 'desc' : 'asc'); setOrderBy('name') }}>
+                            <span>Startup</span>
+                            <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 8l5-5 5 5H5z"/></svg>
+                          </button>
+                        </TableHead>
+                        <TableHead>
+                          <button className="flex items-center space-x-2" onClick={() => { if (orderBy === 'sector') setOrderDir(orderDir === 'asc' ? 'desc' : 'asc'); setOrderBy('sector') }}>
+                            <span>Secteur</span>
+                            <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 8l5-5 5 5H5z"/></svg>
+                          </button>
+                        </TableHead>
+                        <TableHead>
+                          <button className="flex items-center space-x-2" onClick={() => { if (orderBy === 'stage') setOrderDir(orderDir === 'asc' ? 'desc' : 'asc'); setOrderBy('stage') }}>
+                            <span>Stade</span>
+                            <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 8l5-5 5 5H5z"/></svg>
+                          </button>
+                        </TableHead>
+                        <TableHead>
+                          <button className="flex items-center space-x-2" onClick={() => { if (orderBy === 'location') setOrderDir(orderDir === 'asc' ? 'desc' : 'asc'); setOrderBy('location') }}>
+                            <span>Localisation</span>
+                            <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 8l5-5 5 5H5z"/></svg>
+                          </button>
+                        </TableHead>
+                        <TableHead>
+                          <button className="flex items-center space-x-2" onClick={() => { if (orderBy === 'join_date') setOrderDir(orderDir === 'asc' ? 'desc' : 'asc'); setOrderBy('join_date') }}>
+                            <span>Date d&apos;entrée</span>
+                            <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor"><path d="M5 8l5-5 5 5H5z"/></svg>
+                          </button>
+                        </TableHead>
                         <TableHead>Actions</TableHead>
                       </TableRow>
                     </TableHeader>
@@ -299,25 +335,26 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
                         <TableRow key={startup.id}>
                           <TableCell>
                             <div className="flex items-center space-x-3">
-                              <ImageWithFallback
-                                src={startup.logo}
-                                alt={startup.name}
-                                className="w-8 h-8 rounded object-cover"
-                              />
-                              <span className="font-medium">{startup.name}</span>
-                            </div>
+                                {startup.logo ? (
+                                  <ImageWithFallback
+                                    src={startup.logo}
+                                    alt={startup.name}
+                                    className="w-8 h-8 rounded object-cover"
+                                  />
+                                ) : (
+                                  <div className="w-8 h-8 rounded bg-gray-100 flex items-center justify-center">
+                                    <Building2 className="h-5 w-5 text-gray-400" />
+                                  </div>
+                                )}
+                                <span className="font-medium">{startup.name}</span>
+                              </div>
                           </TableCell>
                           <TableCell>
                             <Badge variant="secondary">{startup.sector}</Badge>
                           </TableCell>
                           <TableCell>{startup.stage}</TableCell>
                           <TableCell>{startup.location}</TableCell>
-                          <TableCell>{startup.joinDate}</TableCell>
-                          <TableCell>
-                            <Badge className={getStatusColor(startup.status)}>
-                              {getStatusLabel(startup.status)}
-                            </Badge>
-                          </TableCell>
+                          <TableCell>{startup.join_date ? new Date(startup.join_date).toLocaleDateString('fr-FR') : 'Non renseigné'}</TableCell>
                           <TableCell>
                             <div className="flex space-x-2">
                               <Button size="sm" variant="ghost">
@@ -335,6 +372,10 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
                       ))}
                     </TableBody>
                   </Table>
+                </div>
+                <div className="flex justify-end items-center mt-4 space-x-2">
+                  <Button disabled={startupsPage <= 1 || startupsLoading} onClick={() => fetchStartupsPage(startupsPage - 1)} size="sm">Préc</Button>
+                  <Button disabled={startupsPage * startupsLimit >= startupsTotal || startupsLoading} onClick={() => fetchStartupsPage(startupsPage + 1)} size="sm">Suiv</Button>
                 </div>
               </CardContent>
             </Card>
@@ -426,69 +467,57 @@ export function AdminDashboard({ startups, investors, events, users, recentNews,
             </Card>
           </TabsContent>
 
-          {/* Analytics Tab */}
-          <TabsContent value="analytics">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <Card className="bg-card text-card-foreground shadow-card border-border">
-                <CardHeader>
-                  <h3 className="font-bold">Visites mensuelles</h3>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center justify-center h-64 border-2 border-dashed border-gray-200 rounded-lg">
-                    <div className="text-center">
-                      <BarChart3 className="h-16 w-16 mx-auto text-gray-400 mb-4" />
-                      <p className="text-gray-500">Graphique des visites mensuelles</p>
-                    </div>
+          {/* Users Tab */}
+          <TabsContent value="users">
+            <Card className="bg-card text-card-foreground shadow-card border-border">
+              <CardHeader>
+                <h3 className="font-bold">Liste des utilisateurs</h3>
+              </CardHeader>
+              <CardContent>
+                <div className="overflow-x-auto">
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead>Nom</TableHead>
+                        <TableHead>Email</TableHead>
+                        <TableHead>Rôle</TableHead>
+                        <TableHead>Actions</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {usersData && usersData.length > 0 ? usersData.map((user) => (
+                        <TableRow key={user.id}>
+                          <TableCell>{user.name}</TableCell>
+                          <TableCell>{user.email}</TableCell>
+                          <TableCell>{user.role}</TableCell>
+                          <TableCell>
+                            <div className="flex space-x-2">
+                              <Button size="sm" variant="ghost">
+                                <Edit3 className="h-4 w-4" />
+                              </Button>
+                              <Button size="sm" variant="ghost">
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </div>
+                          </TableCell>
+                        </TableRow>
+                      )) : (
+                        <TableRow>
+                          <TableCell colSpan={4} className="text-center text-gray-500">{usersLoading ? 'Chargement...' : 'Aucun utilisateur'}</TableCell>
+                        </TableRow>
+                      )}
+                    </TableBody>
+                  </Table>
+                </div>
+                <div className="flex items-center justify-between mt-4">
+                  <div className="text-sm text-gray-600">Page {usersPage} — {usersTotal} utilisateurs</div>
+                  <div className="flex space-x-2">
+                    <Button disabled={usersPage <= 1 || usersLoading} onClick={() => fetchUsersPage(usersPage - 1)} size="sm">Préc</Button>
+                    <Button disabled={usersPage * usersLimit >= usersTotal || usersLoading} onClick={() => fetchUsersPage(usersPage + 1)} size="sm">Suiv</Button>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-card text-card-foreground shadow-card border-border">
-                <CardHeader>
-                  <h3 className="font-bold">Secteurs les plus populaires</h3>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span>GreenTech</span>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-24 bg-gray-200 rounded-full h-2">
-                          <div className="bg-primary h-2 rounded-full" style={{width: '85%'}}></div>
-                        </div>
-                        <span className="text-sm text-gray-600">85%</span>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>HealthTech</span>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-24 bg-gray-200 rounded-full h-2">
-                          <div className="bg-primary h-2 rounded-full" style={{width: '72%'}}></div>
-                        </div>
-                        <span className="text-sm text-gray-600">72%</span>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>FinTech</span>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-24 bg-gray-200 rounded-full h-2">
-                          <div className="bg-primary h-2 rounded-full" style={{width: '68%'}}></div>
-                        </div>
-                        <span className="text-sm text-gray-600">68%</span>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span>EdTech</span>
-                      <div className="flex items-center space-x-2">
-                        <div className="w-24 bg-gray-200 rounded-full h-2">
-                          <div className="bg-primary h-2 rounded-full" style={{width: '54%'}}></div>
-                        </div>
-                        <span className="text-sm text-gray-600">54%</span>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </TabsContent>
         </Tabs>
       </div>
@@ -510,10 +539,12 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
       return fallback
     }
   }
-  const [overview, news, eventsList] = await Promise.all([
+  const [overview, news, eventsList, usersResp, startupsResp] = await Promise.all([
     safeJson('/api/admin/overview', { startups:0, investors:0, events:0, users:0 }),
     safeJson('/api/admin/recent-news', { items: [] }),
-    safeJson('/api/admin/recent-events', { items: [] })
+    safeJson('/api/admin/recent-events', { items: [] }),
+    safeJson('/api/admin/users?page=1&limit=10', { users: [], total: 0, page: 1, limit: 10 }),
+    safeJson('/api/admin/startups?limit=50', { items: [] })
   ])
 
   // Convert API structures to component props
@@ -531,6 +562,24 @@ export const getServerSideProps: GetServerSideProps = async ({ req }) => {
     date: e.created_at ? new Date(e.created_at).toLocaleDateString('fr-FR') : '',
     attendees: e.attendees
   }))
+  const userList = (usersResp.users || []).map((u: any) => ({
+    id: u.id,
+    name: u.name,
+    email: u.email,
+    role: u.role
+  }))
 
-  return { props: { ...overview, recentNews, upcomingEvents } }
+  const startupList = (startupsResp.items || []).map((s: any) => ({
+    id: s.id,
+    name: s.name,
+    sector: s.sector,
+    stage: s.stage,
+    location: s.location,
+    logo: s.logo,
+    status: s.status,
+    join_date: s.join_date
+  }))
+
+  // Passer aussi total/page/limit pour initialiser l'UI
+  return { props: { ...overview, recentNews, upcomingEvents, userList, startupList, usersTotal: usersResp.total || 0, usersPage: usersResp.page || 1, usersLimit: usersResp.limit || 10 } }
 }

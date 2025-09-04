@@ -135,3 +135,447 @@
 {"startups": {"ok": true, "created": 0, "updated": 32}, "users": {"ok": true, "created": 0, "updated": 52}, "investors": {"ok": true, "created": 0, "updated": 25}, "partners": {"ok": true, "created": 0, "updated": 17}, "news": {"ok": true, "created": 0, "updated": 15}, "events": {"ok": true, "created": 0, "updated": 10}}
 Synchronisation complète terminée.
 [2025-09-04T00:07:47] ==== Fin sync_all OK ==== 
+[2025-09-05T00:28:58] ==== Debut sync_all ==== 
+Erreur sync startups
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync users
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync investors
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync partners
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync news
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync events
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Une ou plusieurs synchronisations ont échoué.
+{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
+[2025-09-05T00:28:58] ERREUR sync_all
+[2025-09-05T00:31:46] ==== Debut sync_all ==== 
+Erreur sync startups
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync users
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync investors
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync partners
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync news
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync events
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Une ou plusieurs synchronisations ont échoué.
+{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
+[2025-09-05T00:31:46] ERREUR sync_all
+[2025-09-05T00:32:32] ==== Debut sync_all ==== 
+Erreur sync startups
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync users
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync investors
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync partners
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync news
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Erreur sync events
+Traceback (most recent call last):
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
+    results[label] = fn()
+                     ~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
+    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
+    self.cert_verify(conn, request.url, verify, cert)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
+Une ou plusieurs synchronisations ont échoué.
+{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
+[2025-09-05T00:32:32] ERREUR sync_all
