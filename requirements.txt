@@ -1,9 +1,9 @@
-asgiref==3.9.1
-Django==5.2.5
-sqlparse==0.5.3
-django-crontab==0.7.1
-djangorestframework==3.15.2
-django-cors-headers==4.4.0
-psycopg2-binary==2.9.9
-requests==2.32.3
-drf-yasg==1.21.7
+certifi==2025.6.15
+cffi==1.17.1
+cryptography==45.0.4
+packaging==24.2
+pycairo==1.28.0
+pycparser==2.22
+PyGObject==3.52.3
+pywatchman==2.0.0
+wheel @ file:///usr/local/Cellar/python%403.13/3.13.2/libexec/wheel-0.45.1-py3-none-any.whl#sha256=b9235939e2096903717cb6bfc132267f8a7e46deb2ec3ef9c5e234ea301795d0

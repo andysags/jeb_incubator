@@ -10,7 +10,8 @@ class AuditLog(models.Model):
 	cree_le = models.DateTimeField(default=timezone.now)
 
 	class Meta:
-		db_table = 'AuditLog'
+		db_table = 'audit_log'
+		managed = False
 
 	def __str__(self):
 		return f"{self.type_action} on {self.cible_type}:{self.cible_id}"

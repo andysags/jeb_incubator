@@ -14,6 +14,9 @@ class ImportAPI(models.Model):
 
     class Meta:
         db_table = 'import_api'
+        constraints = [
+            models.UniqueConstraint(fields=['source', 'cible_type', 'remote_id'], name='uix_import_api_source_type_remote')
+        ]
 
     def __str__(self):
         return f"Import {self.source} {self.remote_id} -> {self.local_id} ({self.cible_type})"

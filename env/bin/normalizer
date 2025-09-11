@@ -1,4 +1,4 @@
-#!/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/bin/python
+#!/Users/aureldsk/Pool3/G-SVR-500-COT-5-1-survivor-10/env/bin/python3.13
 import sys
 from charset_normalizer.cli import cli_detect
 if __name__ == '__main__':

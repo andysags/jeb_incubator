@@ -11,7 +11,8 @@ class Fichier(models.Model):
 	cree_le = models.DateTimeField(default=timezone.now)
 
 	class Meta:
-		db_table = 'Fichier'
+		db_table = 'files'
+		managed = False
 
 	def __str__(self):
 		return self.nom

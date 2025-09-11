@@ -6,6 +6,7 @@ from django.contrib.auth.hashers import make_password, identify_hasher
 ROLE_CHOICES = [
     ('admin', 'Admin'),
     ('startup', 'Startup'),
+    ('investor', 'Investor'),
 ]
 
 
@@ -21,7 +22,7 @@ class Utilisateur(models.Model):
     maj_le = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = 'users'  # table existante
+        db_table = 'users'
         managed = False     # ne pas tenter de créer / modifier
 
     def __str__(self):

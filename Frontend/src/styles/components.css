@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* Classes utilitaires pour la palette de couleurs crazy */
+.bg-gradient-crazy {
+  background: linear-gradient(to right, #F18585, #C174F2);
+}
+
+.text-gradient-crazy {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #F18585, #C174F2);
+}
+
+.border-gradient-crazy {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #F18585, #C174F2) 1;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* Formes organiques */
+.blob-shape-1 {
+  border-radius: 71% 29% 65% 35% / 33% 56% 44% 67%;
+}
+
+.blob-shape-2 {
+  border-radius: 37% 63% 56% 44% / 49% 56% 44% 51%;
+}
+
+.blob-shape-3 {
+  border-radius: 53% 47% 32% 68% / 38% 36% 64% 62%;
+}

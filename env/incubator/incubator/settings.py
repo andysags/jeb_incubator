@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
+import os
+import dj_database_url
+
 
 from pathlib import Path
 
@@ -25,7 +28,7 @@ SECRET_KEY = 'django-insecure-=tx=&&@+hwrum&mj^pcm-d3rfhug(e$7vv_^e^xkzzoa8hfe3a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["jeb.onrender.com"]
 
 
 # Application definition
@@ -49,6 +52,7 @@ INSTALLED_APPS = [
     'logs',
     'corsheaders',
     'import_api',
+    'authentication',
 ]
 
 REST_FRAMEWORK = {
@@ -63,13 +67,13 @@ REST_FRAMEWORK = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'incubator.urls'
@@ -95,16 +99,30 @@ WSGI_APPLICATION = 'incubator.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+import os
+from pathlib import Path as _P
+
+# Chargement facultatif d'un fichier .env (simple parser) pour unifier config
+_ENV_PATH = BASE_DIR / '.env'
+if _ENV_PATH.exists():
+    for _line in _ENV_PATH.read_text().splitlines():
+        if not _line or _line.strip().startswith('#') or '=' not in _line:
+            continue
+        k, v = _line.split('=', 1)
+        os.environ.setdefault(k.strip(), v.strip())
+
+# Forcer Postgres: plus de fallback SQLite pour garantir unicité des environnements
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'jeb',
-        'USER': 'merchex_user',
-        'PASSWORD': 'merchex_pass',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.parse(
+        "postgresql://merchex_user:09qsFhBzs8kb87mh0GsRuFaiwOHbOwuW@dpg-d2vvgvbe5dus73ei6nvg-a.oregon-postgres.render.com/jeb_we6l",
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
+
+# Protection explicite si Postgres inaccessible (message clair au lieu de fallback silencieux)
+if DATABASES['default']['HOST'] in ('localhost', '127.0.0.1') and not os.environ.get('CI'):  # simple hint
+    pass  # possibilité d'ajouter un check socket ici si besoin
 
 JEB_API_TOKEN = "81d1160831e2f182a69c1526c6b5204e"
 JEB_API_BASE = "https://api.jeb-incubator.com"
@@ -150,6 +168,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -158,6 +177,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # ton front React
+    "http://127.0.0.1:3000",
 ]
+
+# En dev, autoriser toutes les origines pour faciliter les tests front
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = True
 
 # AUTH_USER_MODEL = 'users.Utilisateur'

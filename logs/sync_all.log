@@ -1,581 +1,136 @@
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-02 22:21:32.342718) while time zone support is active.
+[2025-09-11T03:31:00] ==== Debut sync_all ==== 
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-10-26 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.028240) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2022-06-25 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.036989) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2023-03-01 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.045110) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2023-09-25 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.054974) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2024-10-15 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.062938) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-11-16 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.071197) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2024-10-18 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.080233) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2022-05-13 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.089471) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2016-11-02 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.097088) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-09-17 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.105929) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2023-01-26 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.114664) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2022-02-06 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.123068) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-09-26 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.130647) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2023-02-22 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.139075) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-02-10 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.146488) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2022-09-04 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.154507) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2022-12-07 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.162388) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-01-06 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.171762) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-04-24 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.179281) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-07-18 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.188307) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2021-09-03 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.196613) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-06-27 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.206078) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2023-08-26 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.213562) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2016-08-22 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.222289) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-04-27 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.229762) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2019-02-02 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.238683) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2021-04-08 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.246338) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-03-02 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.256070) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2018-01-14 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.263500) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2020-11-26 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.272224) while time zone support is active.
+/home/andysags/.local/lib/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Startup.created_at received a naive datetime (2021-09-07 00:00:00) while time zone support is active.
   warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.279627) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.288226) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.295698) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.304172) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.311711) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.319890) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.327756) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.335622) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.344486) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.352891) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.360479) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.368111) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.376492) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.384083) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.392502) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.400723) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.409182) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.417861) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.426793) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.434998) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Utilisateur.cree_le received a naive datetime (2025-09-03 22:08:09.442436) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-01 13:06:00) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.349083) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.357307) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.367277) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.377597) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.387572) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.396792) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.405585) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.413588) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.422421) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.431441) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.439938) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.448151) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.456558) while time zone support is active.
-  warnings.warn(
-/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/django/db/models/fields/__init__.py:1671: RuntimeWarning: DateTimeField Actualite.publie_le received a naive datetime (2025-09-03 22:41:07.465993) while time zone support is active.
-  warnings.warn(
-{"startups": {"ok": true, "created": 0, "updated": 32}, "users": {"ok": true, "created": 0, "updated": 52}, "investors": {"ok": true, "created": 0, "updated": 25}, "partners": {"ok": true, "created": 0, "updated": 17}, "news": {"ok": true, "created": 0, "updated": 15}, "events": {"ok": true, "created": 0, "updated": 10}}
-Synchronisation complète terminée.
-[2025-09-04T00:07:47] ==== Fin sync_all OK ==== 
-[2025-09-05T00:28:58] ==== Debut sync_all ==== 
-Erreur sync startups
+Startups locales absentes de la source distante: [33, 34, 35]
 Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/manage.py", line 22, in <module>
+    main()
+    ~~~~^^
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/manage.py", line 18, in main
+    execute_from_command_line(sys.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/core/management/__init__.py", line 442, in execute_from_command_line
+    utility.execute()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/core/management/__init__.py", line 436, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/core/management/base.py", line 416, in run_from_argv
+    self.execute(*args, **cmd_options)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/core/management/base.py", line 460, in execute
+    output = self.handle(*args, **options)
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/management/commands/sync_all.py", line 12, in handle
+    results = services.sync_all()
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 603, in sync_all
     )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync users
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
+    
+  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 513, in sync_news
+    }
+    
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 988, in update_or_create
+    obj, created = self.select_for_update().get_or_create(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        create_defaults, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
     )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync investors
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
+    ^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 946, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 629, in get
+    num = len(clone)
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
     )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync partners
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync news
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync events
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Une ou plusieurs synchronisations ont échoué.
-{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
-[2025-09-05T00:28:58] ERREUR sync_all
-[2025-09-05T00:31:46] ==== Debut sync_all ==== 
-Erreur sync startups
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync users
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync investors
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync partners
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync news
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync events
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Une ou plusieurs synchronisations ont échoué.
-{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
-[2025-09-05T00:31:46] ERREUR sync_all
-[2025-09-05T00:32:32] ==== Debut sync_all ==== 
-Erreur sync startups
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 71, in sync_startups
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync users
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 178, in sync_users
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync investors
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 245, in sync_investors
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync partners
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 312, in sync_partners
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync news
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 379, in sync_news
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Erreur sync events
-Traceback (most recent call last):
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 529, in sync_all
-    results[label] = fn()
-                     ~~^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/incubator/import_api/services.py", line 453, in sync_events
-    resp = requests.get(url, headers=HEADERS, timeout=30, verify=certifi.where())
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 73, in get
-    return request("get", url, params=params, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/api.py", line 59, in request
-    return session.request(method=method, url=url, **kwargs)
-           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 589, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/sessions.py", line 703, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 616, in send
-    self.cert_verify(conn, request.url, verify, cert)
-    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/requests/adapters.py", line 303, in cert_verify
-    raise OSError(
-    ...<2 lines>...
-    )
-OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem
-Une ou plusieurs synchronisations ont échoué.
-{"startups": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "users": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "investors": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "partners": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "news": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}, "events": {"ok": false, "error": "Could not find a suitable TLS CA certificate bundle, invalid path: /home/andysags/G-SVR-500-COT-5-1-survivor-10/env/lib64/python3.13/site-packages/certifi/cacert.pem"}}
-[2025-09-05T00:32:32] ERREUR sync_all
+    ^
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/andysags/.local/lib/python3.13/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/site-packages/psycopg/cursor.py", line 97, in execute
+    raise ex.with_traceback(None)
+KeyboardInterrupt

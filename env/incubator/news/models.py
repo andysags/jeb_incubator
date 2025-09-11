@@ -11,7 +11,7 @@ class Actualite(models.Model):
 	type = models.CharField(max_length=50, null=True, blank=True, db_column='type')
 
 	class Meta:
-		# Table réelle supposée 'news'; on la traite en read-only
+		# Table réelle était 'Actualite' dans la base, renommée en 'news'
 		db_table = 'news'
 		managed = False
 

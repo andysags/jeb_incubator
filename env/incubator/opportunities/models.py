@@ -9,7 +9,8 @@ class Opportunite(models.Model):
 	lien = models.CharField(max_length=1024, blank=True, null=True)
 
 	class Meta:
-		db_table = 'Opportunites'
+		db_table = 'opportunities'
+		managed = False
 
 	def __str__(self):
 		return self.titre
