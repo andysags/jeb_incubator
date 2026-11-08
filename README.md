@@ -73,9 +73,9 @@ flowchart LR
 
 The repository is a snapshot of team project work. Before you run it, note the following:
 
-- **Missing `authentication` app.** `settings.py` lists `authentication` in `INSTALLED_APPS`, and `news`, `events` and `opportunities` import `authentication.permissions.IsAdminOrReadOnly`. That package is not in the repository, so you must add it before Django can start.
+- **Missing `authentication` app.** The project expects an `authentication` app, and `news`, `events` and `opportunities` import `authentication.permissions.IsAdminOrReadOnly`. That package is not in the repository, so you must add it before Django can start.
 - **`requirements.txt` does not list the backend dependencies.** It is a system package freeze with no Django in it. Install the packages listed in [Install the backend](#2-install-the-backend) instead.
-- **Configuration is hard-coded.** The database URL, `SECRET_KEY`, `JEB_API_TOKEN`, `DEBUG = True` and `ALLOWED_HOSTS` are set directly in `env/incubator/incubator/settings.py`. Point them at your own values; see [Configure the backend](#3-configure-the-backend).
+- **`settings.py` is currently empty.** `env/incubator/incubator/settings.py` was cleared to remove credentials that had been committed in it. Django cannot start until you recreate it; see [Configure the backend](#3-configure-the-backend).
 - **The Docker setup is incomplete.** `docker/docker-compose.yml` is empty. `docker/Dockerfile` exists, but no Compose stack has been set up around it.
 - **The `Procfile` does not match the module name.** It references `jeb.wsgi:application`, but the WSGI module is `incubator.wsgi`.
 - **The Django project lives inside the virtualenv folder.** It is under `env/incubator/`, and the committed `env/` also contains virtualenv files (`env/bin`, `env/lib`, `pyvenv.cfg`). Only `env/incubator/` is project source.
@@ -109,19 +109,21 @@ pip install "django>=5.2,<5.3" djangorestframework django-cors-headers django-cr
 
 ### 3. Configure the backend
 
-Edit `env/incubator/incubator/settings.py`:
+Recreate `env/incubator/incubator/settings.py` (it is currently empty). Read every secret from environment variables instead of writing it in the file, so nothing sensitive is committed again. The file needs at least:
 
-- Set `DATABASES` to your own PostgreSQL instance, for example `dj_database_url.parse("postgresql://USER:PASSWORD@localhost:5432/jeb")`.
-- Add `localhost` and `127.0.0.1` to `ALLOWED_HOSTS`.
-- Replace `SECRET_KEY` and `JEB_API_TOKEN` with your own values.
+- `INSTALLED_APPS`: `django.contrib.*` (admin, auth, contenttypes, sessions, messages, staticfiles), `rest_framework`, `corsheaders`, `django_crontab`, `users`, `startups`, `news`, `events`, `opportunities`, `messageries`, `files`, `logs`, `import_api`, `authentication`.
+- `ROOT_URLCONF = "incubator.urls"`.
+- `DATABASES` built from a `DATABASE_URL` environment variable, for example `dj_database_url.parse(os.environ["DATABASE_URL"])` with `postgresql://USER:PASSWORD@localhost:5432/jeb`.
+- `SECRET_KEY`, `JEB_API_TOKEN` and `DEBUG` from the environment, and `localhost` / `127.0.0.1` in `ALLOWED_HOSTS`.
+- `CRONJOBS = [("5 */2 * * *", "django.core.management.call_command", ["sync_all"])]` if you want the 2-hourly sync through django-crontab.
 
-At startup, `settings.py` also loads `KEY=VALUE` lines from `env/incubator/.env` into the process environment. The settings below read the environment:
+`docker/docker_settings.py` imports this module (`from env.incubator.incubator.settings import *`), so the Docker settings depend on it too. Other code reads these environment variables:
 
 | Variable | Read by | Purpose |
 |----------|---------|---------|
 | `MESSAGERIES_ALLOW_ANONYMOUS` | `messageries/views.py` | When set, messaging endpoints allow unauthenticated access (dev only). |
 | `DEBUG`, `SECRET_KEY`, `ALLOWED_HOSTS`, `DATABASE_URL`, `REDIS_URL` | `docker/docker_settings.py` | Overrides for the Docker settings module. |
-| `JEB_API_TOKEN` | `scripts/sync_all.sh` (via the root `.env`) | Token for the JEB API, if it is not set in `settings.py`. |
+| `JEB_API_TOKEN` | `scripts/sync_all.sh` (via the root `.env`) | Token for the JEB API used by the sync script. |
 
 The database is used database-first: most tables must already exist. `Frontend/installation.md` (in French) covers creating the role and granting privileges. Then apply migrations:
 

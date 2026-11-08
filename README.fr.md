@@ -73,9 +73,9 @@ flowchart LR
 
 Le dépôt est un instantané d'un projet d'équipe. Avant de le lancer, tenez compte des points suivants :
 
-- **Application `authentication` manquante.** `settings.py` déclare `authentication` dans `INSTALLED_APPS`, et `news`, `events` et `opportunities` importent `authentication.permissions.IsAdminOrReadOnly`. Ce package n'est pas dans le dépôt : vous devez l'ajouter pour que Django démarre.
+- **Application `authentication` manquante.** Le projet attend une application `authentication`, et `news`, `events` et `opportunities` importent `authentication.permissions.IsAdminOrReadOnly`. Ce package n'est pas dans le dépôt : vous devez l'ajouter pour que Django démarre.
 - **`requirements.txt` ne liste pas les dépendances du backend.** C'est un export de paquets système qui ne contient pas Django. Installez plutôt les paquets indiqués dans [Installer le backend](#2-installer-le-backend).
-- **Configuration codée en dur.** L'URL de la base, la `SECRET_KEY`, le `JEB_API_TOKEN`, `DEBUG = True` et `ALLOWED_HOSTS` sont définis directement dans `env/incubator/incubator/settings.py`. Remplacez-les par vos propres valeurs ; voir [Configurer le backend](#3-configurer-le-backend).
+- **`settings.py` est actuellement vide.** `env/incubator/incubator/settings.py` a été vidé pour retirer des identifiants qui y avaient été commités. Django ne peut pas démarrer tant qu'il n'est pas recréé ; voir [Configurer le backend](#3-configurer-le-backend).
 - **Configuration Docker incomplète.** `docker/docker-compose.yml` est vide. `docker/Dockerfile` existe, mais aucune stack Compose n'a été mise en place autour.
 - **Le `Procfile` ne correspond pas au nom du module.** Il référence `jeb.wsgi:application`, alors que le module WSGI est `incubator.wsgi`.
 - **Le projet Django se trouve dans le dossier du virtualenv.** Il est dans `env/incubator/`, et le dossier `env/` versionné contient aussi des fichiers de virtualenv (`env/bin`, `env/lib`, `pyvenv.cfg`). Seul `env/incubator/` contient le code source du projet.
@@ -109,19 +109,21 @@ pip install "django>=5.2,<5.3" djangorestframework django-cors-headers django-cr
 
 ### 3. Configurer le backend
 
-Modifiez `env/incubator/incubator/settings.py` :
+Recréez `env/incubator/incubator/settings.py` (il est actuellement vide). Lisez chaque secret depuis des variables d'environnement au lieu de l'écrire dans le fichier, pour ne plus rien commiter de sensible. Le fichier doit contenir au minimum :
 
-- Faites pointer `DATABASES` vers votre propre instance PostgreSQL, par exemple `dj_database_url.parse("postgresql://USER:PASSWORD@localhost:5432/jeb")`.
-- Ajoutez `localhost` et `127.0.0.1` à `ALLOWED_HOSTS`.
-- Remplacez `SECRET_KEY` et `JEB_API_TOKEN` par vos propres valeurs.
+- `INSTALLED_APPS` : `django.contrib.*` (admin, auth, contenttypes, sessions, messages, staticfiles), `rest_framework`, `corsheaders`, `django_crontab`, `users`, `startups`, `news`, `events`, `opportunities`, `messageries`, `files`, `logs`, `import_api`, `authentication`.
+- `ROOT_URLCONF = "incubator.urls"`.
+- `DATABASES` construit à partir d'une variable d'environnement `DATABASE_URL`, par exemple `dj_database_url.parse(os.environ["DATABASE_URL"])` avec `postgresql://USER:PASSWORD@localhost:5432/jeb`.
+- `SECRET_KEY`, `JEB_API_TOKEN` et `DEBUG` lus depuis l'environnement, et `localhost` / `127.0.0.1` dans `ALLOWED_HOSTS`.
+- `CRONJOBS = [("5 */2 * * *", "django.core.management.call_command", ["sync_all"])]` si vous voulez la synchronisation toutes les 2 heures via django-crontab.
 
-Au démarrage, `settings.py` charge aussi les lignes `CLÉ=VALEUR` de `env/incubator/.env` dans l'environnement du processus. Les réglages ci-dessous lisent l'environnement :
+`docker/docker_settings.py` importe ce module (`from env.incubator.incubator.settings import *`), donc la configuration Docker en dépend aussi. Le reste du code lit ces variables d'environnement :
 
 | Variable | Lue par | Rôle |
 |----------|---------|------|
 | `MESSAGERIES_ALLOW_ANONYMOUS` | `messageries/views.py` | Si définie, les endpoints de messagerie acceptent les accès non authentifiés (développement uniquement). |
 | `DEBUG`, `SECRET_KEY`, `ALLOWED_HOSTS`, `DATABASE_URL`, `REDIS_URL` | `docker/docker_settings.py` | Valeurs de remplacement pour le module de settings Docker. |
-| `JEB_API_TOKEN` | `scripts/sync_all.sh` (via le `.env` racine) | Jeton de l'API JEB, s'il n'est pas défini dans `settings.py`. |
+| `JEB_API_TOKEN` | `scripts/sync_all.sh` (via le `.env` racine) | Jeton de l'API JEB utilisé par le script de synchronisation. |
 
 La base fonctionne en « database-first » : la plupart des tables doivent déjà exister. `Frontend/installation.md` explique comment créer le rôle et accorder les droits. Appliquez ensuite les migrations :
 
